@@ -1,0 +1,36 @@
+!! For those who are looking for a similar tool that works on both WCF and Web services, try this out : [url: WCF Storm|http://www.wcfstorm.com/wcf/default.aspx]
+
+*Project Description*
+{project:description}
+
+----------------------------------------------------------------------------------
+_Commercial Web Service Test Tools_ : *$300+*
+_Storm_ : *FREE*
+_Keeping an open source project alive_ : *PRICELESS.*   
+!! [url:Please Donate!|https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=erik%2earaojo%40hotmail%2ecom&item_name=STORM%20Project%20Donation&no_shipping=1&return=http%3a%2f%2fwww%2ecodeplex%2ecom%2fstorm&cancel_return=http%3a%2f%2fwww%2ecodeplex%2ecom%2fstorm&tax=0&currency_code=USD&lc=US&bn=PP%2dDonationsBF&charset=UTF%2d8]
+---------------------------------------------------------------------------------
+
+*+Storm showing multiple open tabs and a test case that failed.+*
+[image:StormCompare.png ]
+
+Requirements :
+   .NET Framework 2.0
+   F# 1.9.3.14 (OPTIONAL) -  Releases labeled with ""standalone" doesn't need F# to be installed on the machine 
+
+
+*QUICK GUIDE*
+
+1. Add a web service
+
+Click Add -> type in the wsdl endpoint URL.
+
++Sample URLs+
+- [url:http://www.deeptraining.com/webservices/weather.asmx]
+- [url:http://api.google.com/GoogleSearch.wsdl]
+-[url:http://webservices.imacination.com/distance/Distance.jws?wsdl]
+
+2. Select a web method (TreeView on the left side).  This will cause the tool to analyze the web method
+   and display the parameters (if any) needed to invoke the method
+
+3, Select a web method parameter and provide the necessary values
+4 Click _Go_ (Green arrow button). This will invoke the webmethod.

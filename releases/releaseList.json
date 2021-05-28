@@ -1,0 +1,143 @@
+[
+  {
+    "Id": "0",
+    "Name": "Storm_r1.0-Adarna release",
+    "DevelopmentStatus": "None",
+    "Description": "I'm bumping up the release version to 1.0 since I've already accomplished the features I set out to have in a 1.0 version. I hope that this release will continue to be as useful as the previous ones and that it would make your web service coding more fun and less time consuming.\n\n------------------------\nRelease notes Storm_r1.0-Adarna\n------------------------\n\n*Changes :*\n  =========\n    1. Added multiple tab support.\n          * Right-click on a web method -> Open in new tab\n    2. Added Test case Editor\n          * Right-click on a test case -> Run/Edit\n          * Test input and expected response are editable.\n          * The actual response can be \"Promoted\" into the Expected response.\n    3. Moved UI config out of the config file into Configuration Main menu      \n          * COnfiguration is now divided into 2 tabs, Service and User Interface. \n            For the moment, the User Interface tab contains 2 fields\n              a. Color raw soap -> Toogle to enable/disable syntax highlighting of\n                 the soap message in \"Raw view\".  This is checked by default but if you're working\n                 with very large soap messages, uncheck this \n                 \n              b. Show Detailed exception -> Toggle to enable/disable very detailed log exception\n                 entries\n              \n    4. Added saving of UI settings are when the app is closed.  File is Storm.settings\n    5. Added generation of default soap messages.  Web methods can now be invoked  from\n       \"Raw view\" without having to invoke the web method 1st via Tree View\n       \n    6. Added saving of \"Expected response\"\n    7. Added execution of test cases and automatic comparison of the actual and expected response.\n       The 2 responsed are shown side-by-side and the differences highlighted.\n    8. Added real-time syntax highlighting for raw soap messages.\n    9. Added notification windows (fades in and out). (shown at the lower-right corner of the tool). \n    10. Added clearing of the logging window.\n    \n    11. Code changes brought about by the F# Sept 08 CTP release. (you'll now need VS 2008 to open the F# projects).\n    \n    12. Cleaner splash screen.\n    \n    13. Others..\n    \n    14. Added paypal \"Donate\" button (Click on the ABOUT menu button).  The donate link has been in the codeplex site for a long time and Storm has been downloaded 3000+ times and yet there has been ZERO donations so far.  I wrote STORM out of genuine desire to help out my fellow developers but it was naive of me to assume i'd get something back.Anyway I hope someone out there will donate so that I can at least upgrade my 1G RAM Vista laptop.\n    \n*Fixes :*\n  ========\n    1. fix for Issue 1464 : WCF Services with basicHttpBinding now supported\n    2. fix for issue 2180 : ADDED NTLM and Proxy authentication to web service calls.  The values needed for these are all configurable from the Configurations menu or from the COnfiguration section (Lower right portion)\n   3. fix for issue 2042 : Nullable fields now works as expected.  In addition, objects set to null (in Tree View) are  no longer sent with default values.\n\nNote : I couldn't get the win32res compiler option to work in the Sept 2008 CTP version so the exe icon is the default one.  \n    ",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2008-09-29T18:44:13.163-07:00",
+    "Files": [
+      {
+        "Id": "d5a8a8ff-3949-475e-87d7-2c26b6e1cd64",
+        "FileName": "Storm_r1.0-Adarna.zip",
+        "Url": "./0/d5a8a8ff-3949-475e-87d7-2c26b6e1cd64",
+        "Type": "Application",
+        "UploadDate": "2008-09-29T18:44:13.303-07:00"
+      },
+      {
+        "Id": "4338ef6f-4a99-449c-9840-34dc16ff99b2",
+        "FileName": "StormSource.zip",
+        "Url": "./0/4338ef6f-4a99-449c-9840-34dc16ff99b2",
+        "Type": "Source Code",
+        "UploadDate": "2008-09-28T22:43:21.51-07:00"
+      },
+      {
+        "Id": "8af50e4a-0ccb-438d-a05c-eb76ca365f35",
+        "FileName": "Release notes_Storm_r1.0-Adarna.txt",
+        "Url": "./0/8af50e4a-0ccb-438d-a05c-eb76ca365f35",
+        "Type": "Documentation",
+        "UploadDate": "2008-09-28T22:43:24.79-07:00"
+      },
+      {
+        "Id": "389eabb4-63f4-4a0a-8c22-19515955e644",
+        "FileName": "QUICK Instructions.txt",
+        "Url": "./0/389eabb4-63f4-4a0a-8c22-19515955e644",
+        "Type": "Documentation",
+        "UploadDate": "2008-09-29T00:15:36.223-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "1",
+    "Name": "Storm_r0.3.0",
+    "DevelopmentStatus": "None",
+    "Description": "!! *STORM v0.3.0 standalone release*\n\n+Changes+\n1.  New storm project format (incompatible with previous version)\n2.  Raw soap requests can now be saved as test cases\n3.  Storm projects can now be re-loaded\n4.  Syntax highlighting for raw soap requests\n5.  Fixed concurrency issue when loading a stormproject that contains multiple web services\n6.  Modifid splash screen to use a lighter image.\n6.  Other bug fixes.\n\n_Please see the QUICK Instructions_",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2008-06-27T02:08:27.613-07:00",
+    "Files": [
+      {
+        "Id": "2dd968a3-f4f9-42d3-886b-2379b8d6bb73",
+        "FileName": "Storm_r0.3.0_standalone.rar",
+        "Url": "./1/2dd968a3-f4f9-42d3-886b-2379b8d6bb73",
+        "Type": "Application",
+        "UploadDate": "2008-06-10T03:22:23.843-07:00"
+      },
+      {
+        "Id": "daca2101-826d-4066-b644-f66ed0d370bf",
+        "FileName": "QUICK Instructions.txt",
+        "Url": "./1/daca2101-826d-4066-b644-f66ed0d370bf",
+        "Type": "Documentation",
+        "UploadDate": "2008-06-10T03:22:25.19-07:00"
+      },
+      {
+        "Id": "28ffc5d0-2805-4ed5-b32f-c8c929101434",
+        "FileName": "storm-r0.3-source.rar",
+        "Url": "./1/28ffc5d0-2805-4ed5-b32f-c8c929101434",
+        "Type": "Source Code",
+        "UploadDate": "2008-06-27T02:08:27.63-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "2",
+    "Name": "Storm_r0.2.0",
+    "DevelopmentStatus": "None",
+    "Description": "*Storm Release 0.2.0*\n\nChanges:\n   1. Added support for Soap headers\n   2. Added ability to create/open storm projects.\n \nPlease provide feedback and/or log issues. If anynone would like to contribute, please let me know.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2008-05-19T06:07:56.413-07:00",
+    "Files": [
+      {
+        "Id": "6cd06c5e-9842-4477-a7bd-baa005141f4b",
+        "FileName": "Storm_r0.2.0_standalone.rar",
+        "Url": "./2/6cd06c5e-9842-4477-a7bd-baa005141f4b",
+        "Type": "Application",
+        "UploadDate": "2008-05-19T06:06:20.533-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "3",
+    "Name": "Storm_r0.1.0-alpha",
+    "DevelopmentStatus": "None",
+    "Description": "This is a \"preview\" release.  Most of the functionalities are already complete except for support on SoapHeader, Cookies XmlAttribute and XmlElement datatypes and some other items.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2008-05-08T11:43:49.727-07:00",
+    "Files": [
+      {
+        "Id": "9b7efd4b-dddd-46a3-bff0-303bb3f07d14",
+        "FileName": "Storm_r0.1.0.rar",
+        "Url": "./3/9b7efd4b-dddd-46a3-bff0-303bb3f07d14",
+        "Type": "Application",
+        "UploadDate": "2008-05-08T11:29:28.533-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "4",
+    "Name": "Storm r1.1-Adarna",
+    "DevelopmentStatus": "Stable",
+    "Description": "*Release notes Storm_r1.1 Oct 29, 2008*\n\n  Changes :\n  =========\n    1. Launch new storm window from File menu (File -> New Window)\n    2. Configuration items moved from the config file to the config window (UI).  All config items\n       are now done via the UI.\n    3. \"Favorite services\" can now be added via the configuration window.  These services will\n       appear in the dropdown options whenever you add a web service\n    4. The config file is optional. However, to further customize the tool the items below can be\n       set\n      \n            \n               <?xml version=\"1.0\" encoding=\"utf-8\" ?>\n               <configuration>\n                  <appSettings>\n                    <add key=\"ShowSplash\" value=\"3\"/> <!-- set to zero or negative number to disable splash-->\n                    \n                    <!-- UI settings--> \n                    <add key=\"GradientHighColor\" value=\"Window\"/>\n                    <add key=\"GradientLowColor\" value=\"GradientActiveCaption\"/>\n                    <add key=\"GradientRenderMode\" value=\"Glass\"/> <!-- Glass, Gradient or Flat -->\n                  </appSettings>\n               </configuration>\n\n\n  FIXES:\n  =========\n    1. Issue 2398 : Handling of abstract/polymorphic types. A dropdown of allowed types will be shown\n       whenever a polymorphic type is encountered.\n    2. Object editor in \"Tree View\" now shows up for newly opened tabd.\n    3. Exception is no longer raised when a default soap cannot be created. A warning is instead\n       logged in the log window\n    4. Fixed the error below.\n      \n       Exception occurs when\n          step 1. open method in a new tab\n          step 2. Invoke method\n          step 3. switch to QuickEdit tab and select the same method. This triggers an exception.\n\n   \n     5. Additional fix for Issue 2180.  Authentication now defaults to Windows Auth.  \n",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2008-10-29T23:19:33.523-07:00",
+    "Files": [
+      {
+        "Id": "90260455-c201-4ac5-9d54-eba965a72043",
+        "FileName": "Storm_r1.1-Adarna.zip",
+        "Url": "./4/90260455-c201-4ac5-9d54-eba965a72043",
+        "Type": "Application",
+        "UploadDate": "2008-10-29T00:11:48.72-07:00"
+      },
+      {
+        "Id": "c710e443-99a8-416e-aed6-7dcbb58274fc",
+        "FileName": "StormSource_r1.1.zip",
+        "Url": "./4/c710e443-99a8-416e-aed6-7dcbb58274fc",
+        "Type": "Source Code",
+        "UploadDate": "2008-10-29T00:16:31.49-07:00"
+      },
+      {
+        "Id": "09529c63-7f5c-4b49-b6c1-e4d0bad6de46",
+        "FileName": "QUICK Instructions.txt",
+        "Url": "./4/09529c63-7f5c-4b49-b6c1-e4d0bad6de46",
+        "Type": "Documentation",
+        "UploadDate": "2008-10-29T00:16:32.223-07:00"
+      },
+      {
+        "Id": "b7a8bb2a-de41-4cc6-afc5-8e0219cee8fa",
+        "FileName": "Release notes_Storm_r1.1-Adarna.txt",
+        "Url": "./4/b7a8bb2a-de41-4cc6-afc5-8e0219cee8fa",
+        "Type": "Documentation",
+        "UploadDate": "2008-10-29T23:19:33.057-07:00"
+      }
+    ]
+  }
+]

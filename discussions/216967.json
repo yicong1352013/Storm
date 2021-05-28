@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "458783",
+    "ThreadId": "216967",
+    "Html": "<p>Hi ,</p>\r\n<p>I am new here. Storm is the&nbsp;exactly&nbsp;what I have been looking for and I came to the right place.&nbsp;</p>\r\n<p>I have downloaded the source code and want to build the solution. But it is giving me this error code. I think it is for win32 icon. In my project properties it has the value &quot;&nbsp;--standalone --win32res icon.res &quot; in other flag property. By right shouldn't be any problem.</p>\r\n<p>Can anyone please point me out?&nbsp;</p>\r\n<p>Thanks</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-06-22T21:01:26.907-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "528466",
+    "ThreadId": "216967",
+    "Html": "\r\n<p>Hello, I'm getting this error too.&nbsp; Did you ever get it figured out?&nbsp; This is a great tool, but doesn't seem to be an active project anymore.</p>\r\n",
+    "PostedDate": "2010-11-29T13:01:36.347-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

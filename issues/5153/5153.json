@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Normal test works fine but creating a test case results in:\n \nSystem.Xml.XmlException: For security reasons DTD is prohibited in this XML document. To enable DTD processing set the ProhibitDtd property on XmlReaderSettings to false and pass the settings into XmlReader.Create method.\n   at System.Xml.XmlTextReaderImpl.Throw(Exception e)\n   at System.Xml.XmlTextReaderImpl.ThrowWithoutLineInfo(String res, String arg)\n   at System.Xml.XmlTextReaderImpl.ParseDoctypeDecl()\n   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()\n   at System.Xml.XmlTextReaderImpl.Read()\n   at Microsoft.XmlDiffPatch.XmlDiffDocument.LoadChildNodes(XmlDiffParentNode parent, XmlReader reader, Boolean bEmptyElement)\n   at Microsoft.XmlDiffPatch.XmlDiffDocument.Load(XmlReader reader, XmlHash xmlHash)\n   at Microsoft.XmlDiffPatch.XmlDiff.Compare(XmlReader sourceReader, XmlReader changedReader, XmlWriter diffgramWriter)\n   at Storm.Utilities.GenHelper.compareXml(String xml1, String xml2)\n   at Storm.Utilities.GenHelper.getDiffIfError(String xml1, String xml2)\n   at Storm.Types.TestRunnerFS.RenderResults(MethodTestCase tc)\n   at <StartupCode$Storm>.$Type.testrunner.clo@230.Invoke(RunWorkerCompletedEventArgs args)\n   at <StartupCode$FSharp.Core>.$Event.v@67.Invoke(Object , Arg )\n   at Microsoft.FSharp.Control.Handler`1.Invoke(Object , A )\n   at Microsoft.FSharp.Control.Event`1.Trigger(Arg arg)\n   at Microsoft.FSharp.Control.EventModule.clo@73.Invoke(Arg arg0)\n   at <StartupCode$Storm>.$Type.bgworker.run@51@55_1.Invoke(Object sender, RunWorkerCompletedEventArgs e)\n   at System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(RunWorkerCompletedEventArgs e)\n   at System.ComponentModel.BackgroundWorker.AsyncOperationCompleted(Object arg)",
+    "LastUpdatedDate": "2013-02-21T15:39:51.433-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "storm",
+    "ReportedDate": "2010-01-05T13:10:24.993-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Test case - For security reasons DTD is prohibited in this XML document",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 5153
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

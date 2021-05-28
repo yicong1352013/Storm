@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Acquiring the wsdl...\nSystem.InvalidOperationException: The HTML document does not contain Web service discovery information.\n   at System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoverAny(String url)\n   at Storm.Types.WsdlLoaderImpl.wsdlLoadFunction@113@113(Option`1 proxyOpt@113, Option`1 credentialsOpt@113, Ref`1 logTrigger@113, String wsdlEndpoint)\n   at Storm.Types.WsdlLoaderImpl.clo@163.Load()\nGenerating code...\nServiceDescriptions is Empty\nCompiling into an assembly...\nSystem.Exception: Unable to generate default soap Messages\n   at Storm.CS.Lib.Soap.StormSoapMessages.GetDefaultSoapMessages(Boolean useSoap12)\n   at Storm.Types.WebSvcManagerOps.clo@90.CreateWebServiceModel()\n   at <StartupCode$Storm>.$Type.bgworker.run@51@57_2.Invoke(DoWorkEventArgs dArgs)\n   at <StartupCode$Storm>.$Type.bgworker.run@51@57_1.Invoke(Object sender, DoWorkEventArgs e)\n   at System.ComponentModel.BackgroundWorker.OnDoWork(DoWorkEventArgs e)\n   at System.ComponentModel.BackgroundWorker.WorkerThreadStart(Object argument)",
+    "LastUpdatedDate": "2013-02-21T15:39:53.26-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "storm",
+    "ReportedDate": "2008-10-16T08:42:58.58-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Unable to generate soap Messages",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2465
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hi lucasvogel,\r\n\r\n    This error usually occurs when the web service authentication level is not set to anonymous.  There is a bug in the 1.0 version (http://www.codeplex.com/storm/WorkItem/View.aspx?WorkItemId=2180) which prevents the tool from sending the proper windows authentication credentials. You can try out the fix by compiling the latest source or if you've got access to the web service you can just set the authentication level to ANONYMOUS.\r\n\r\n   If this error is not due to authentication please grab the request/response using fiddler or tcptrace.  Thanks!\r\n\r\n~Erik",
+      "PostedDate": "2008-10-19T20:05:22.66-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:39:53.26-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

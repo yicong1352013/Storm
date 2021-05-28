@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "A feature that I would find very useful is if you could view the results of a web method in a grid.  I develop a lot of web method that return arrays containing 10-1000 of items and viewing them as XML or as a tree is not very helpful.  Attached is a screenshot of a small test program that maby shows what I mean.",
+    "LastUpdatedDate": "2013-02-21T15:39:52.24-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "storm",
+    "ReportedDate": "2009-02-17T15:41:49.94-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "View results in a grid",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3228
+  },
+  "FileAttachments": [
+    {
+      "FileId": 1442,
+      "FileName": "grid.jpg",
+      "DownloadUrl": ".\\1442"
+    }
+  ],
+  "Comments": []
+}

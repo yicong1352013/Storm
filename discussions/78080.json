@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "267005",
+    "ThreadId": "78080",
+    "Html": "<p>hi</p>\r\n<p>I cannot connect to a https service&nbsp;using storm. Is there any way to disable client side cert validation ?</p>\r\n<p>the error is like &quot;cannot establish ssl trust,...&quot;</p>",
+    "PostedDate": "2009-12-14T06:14:47.18-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "506796",
+    "ThreadId": "230797",
+    "Html": "<p>Does this version of Storm work with WS HTTP Bindings?</p>\r\n<p>When I try to add my Web Service I get the following output:</p>\r\n<p>Acquiring the wsdl...Resolving the wsdlendpoint...Generating code...Code generation failed.Microsoft.FSharp.Core.FailureException: Assembly not yet created.&nbsp;&nbsp; at Storm.Types.WebSvcManagerOps.clo@90.CreateWebServiceModel()&nbsp;&nbsp; at &lt;StartupCode$Storm&gt;.$Type.bgworker.run@51@57_2.Invoke(DoWorkEventArgs dArgs)&nbsp;&nbsp; at &lt;StartupCode$Storm&gt;.$Type.bgworker.run@51@57_1.Invoke(Object sender, DoWorkEventArgs e)&nbsp;&nbsp; at System.ComponentModel.BackgroundWorker.WorkerThreadStart(Object argument)</p>\r\n<p>&nbsp;</p>\r\n<p>The same Web Service is callable using WCF Storm. There isn't anything WCF specific in the WS HTTP Binding, but maybe this version is Basic HTTP only.</p>",
+    "PostedDate": "2010-10-13T11:45:02.48-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "552362",
+    "ThreadId": "242521",
+    "Html": "\r\n<p></p>\r\n<div style=\"text-indent:-2em; margin-left:1em\"><a href=\"\">W</a>E have created our webservices using WS security. Due to this we are getting following error. Please let me know if there is an enhancement available.</div>\r\n<div style=\"text-indent:-2em; margin-left:1em\"></div>\r\n<div style=\"text-indent:-2em; margin-left:1em\"><span>&lt;</span><span>soap:Fault</span><span>&gt;</span></div>\r\n<div>\r\n<div>\r\n<div style=\"text-indent:-2em; margin-left:1em\"><span>&nbsp;</span><span>&lt;</span><span>faultcode</span><span>&gt;</span><span>q0:Security</span><span>&lt;/</span><span>faultcode</span><span>&gt;</span></div>\r\n</div>\r\n<div>\r\n<div style=\"text-indent:-2em; margin-left:1em\"><span>&nbsp;</span><span>&lt;</span><span>faultstring</span><span>&gt;</span><span>Header http://schemas.xmlsoap.org/ws/2004/08/addressing:Action for ultimate recipient is required but not present in the message.</span><span>&lt;/</span><span>faultstring</span><span>&gt;</span></div>\r\n</div>\r\n<div>\r\n<div style=\"text-indent:-2em; margin-left:1em\"><span>&nbsp;</span><span>&lt;</span><span>faultactor</span><span>&gt;</span><span>http://64r2mac16/HEFoundationiService/SISConnectorSvc.asmx</span><span>&lt;/</span><span>faultactor</span><span>&gt;</span></div>\r\n</div>\r\n</div>\r\n<p></p>\r\n",
+    "PostedDate": "2011-01-19T22:52:55.39-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

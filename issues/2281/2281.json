@@ -1,0 +1,66 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "WCF not yet supportedd",
+    "ClosedDate": "2008-11-02T17:35:50.253-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi\n \nI have code generation message when adding wsdl from WCF. There are two endpoints in the wsdl with wsHttpBinding and customBinding. Both are supporting UserName token. WSDL file attached for reference.",
+    "LastUpdatedDate": "2013-05-16T03:46:30.807-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "storm",
+    "ReportedDate": "2008-09-10T04:48:48.31-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Problem with WCF",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2281
+  },
+  "FileAttachments": [
+    {
+      "FileId": 990,
+      "FileName": "SampleService.wsdl",
+      "DownloadUrl": ".\\990"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Hi,\r\n      as mentioned in other WCF-related issues, WCF is not yet supported by Storm. \r\n\r\n~Erik",
+      "PostedDate": "2008-11-02T17:35:08.973-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-11-02T17:35:50.253-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:39:54.373-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:46:30.807-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

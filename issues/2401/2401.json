@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "ascend dlls already included in the release files",
+    "ClosedDate": "2008-10-03T02:03:47.24-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hello,\n \nI would like to try Storm but when starting Storm.exe it crashes immediately. \nIn the Event Viewer/Application there is the following message:\n \n-----------------------------------------------------------------------------\nType de l'événement :\tErreur\nSource de l'événement :\t.NET Runtime 2.0 Error Reporting\nCatégorie de l'événement :\tAucun\nID de l'événement :\t5000\nDate :\t\t02.10.2008\nHeure :\t\t15:45:30\nUtilisateur :\tN/A\nOrdinateur :\tVMW-XP-SP2\nDescription :\nEventType clr20r3, P1 storm.exe, P2 0.0.0.0, P3 48e060bf, P4 storm, P5 0.0.0.0, P6 48e060bf, P7 3, P8 0, P9 system.typeinitialization, P10 NIL.\n \nPour plus d'informations, consultez le centre Aide et support à l'adresse http://go.microsoft.com/fwlink/events.asp.\nDonnées :\n0000: 63 00 6c 00 72 00 32 00   c.l.r.2.\n0008: 30 00 72 00 33 00 2c 00   0.r.3.,.\n0010: 20 00 73 00 74 00 6f 00    .s.t.o.\n0018: 72 00 6d 00 2e 00 65 00   r.m...e.\n0020: 78 00 65 00 2c 00 20 00   x.e.,. .\n0028: 30 00 2e 00 30 00 2e 00   0...0...\n0030: 30 00 2e 00 30 00 2c 00   0...0.,.\n0038: 20 00 34 00 38 00 65 00    .4.8.e.\n0040: 30 00 36 00 30 00 62 00   0.6.0.b.\n0048: 66 00 2c 00 20 00 73 00   f.,. .s.\n0050: 74 00 6f 00 72 00 6d 00   t.o.r.m.\n0058: 2c 00 20 00 30 00 2e 00   ,. .0...\n0060: 30 00 2e 00 30 00 2e 00   0...0...\n0068: 30 00 2c 00 20 00 34 00   0.,. .4.\n0070: 38 00 65 00 30 00 36 00   8.e.0.6.\n0078: 30 00 62 00 66 00 2c 00   0.b.f.,.\n0080: 20 00 33 00 2c 00 20 00    .3.,. .\n0088: 30 00 2c 00 20 00 73 00   0.,. .s.\n0090: 79 00 73 00 74 00 65 00   y.s.t.e.\n0098: 6d 00 2e 00 74 00 79 00   m...t.y.\n00a0: 70 00 65 00 69 00 6e 00   p.e.i.n.\n00a8: 69 00 74 00 69 00 61 00   i.t.i.a.\n00b0: 6c 00 69 00 7a 00 61 00   l.i.z.a.\n00b8: 74 00 69 00 6f 00 6e 00   t.i.o.n.\n00c0: 20 00 4e 00 49 00 4c 00    .N.I.L.\n00c8: 0d 00 0a 00               ....    \n-----------------------------------------------------------------------------\n \nI tried on XP and Vista without success.\n \nCould you help? Is there some prerequisite missing?\n \nThanks\nAdriano",
+    "LastUpdatedDate": "2013-05-16T03:46:30.067-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "storm",
+    "ReportedDate": "2008-10-02T06:51:41.843-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Storm crashes at startup",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2401
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Can you please check that this issue is not related to Issue 2387? Thanks.\r\n~Erik",
+      "PostedDate": "2008-10-02T20:14:52.797-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Hello EriK,\r\n\r\nYes there were no Ascend dlls. \r\nI don't know why there were missing, today I downloaded the Zip again and there are present.\r\n\r\nThank you for your help.\r\nadriano",
+      "PostedDate": "2008-10-02T23:25:59.23-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-10-03T02:03:47.24-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:39:53.7-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:46:30.067-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

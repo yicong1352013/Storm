@@ -1,0 +1,56 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When I go to a WCF web service exposed from BizTalk I receive the error below:\n \nhttp://localhost/WcfSqlService/AdvWrksProduct.svc\nloading http://localhost/WcfSqlService/AdvWrksProduct.svc\nAcquiring the wsdl...\nResolving the wsdlendpoint...\nGenerating code...\nCode generation failed.\nMicrosoft.FSharp.Core.FailureException: Assembly not yet created.\nat Storm.Types.WebSvcManagerOps.clo@90.CreateWebServiceModel()\nat <StartupCode$Storm>.$Type.bgworker.run@51@57_2.Invoke(DoWorkEventArgs dArgs)\nat <StartupCode$Storm>.$Type.bgworker.run@51@57_1.Invoke(Object sender, DoWorkEventArgs e)\nat System.ComponentModel.BackgroundWorker.OnDoWork(DoWorkEventArgs e)\nat System.ComponentModel.BackgroundWorker.WorkerThreadStart(Object argument)\n \nAny ideas. Saw releated issue around WCF.",
+    "LastUpdatedDate": "2013-02-21T15:39:52.07-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "storm",
+    "ReportedDate": "2009-02-20T10:49:50.42-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "\"Assembly not yet created\" when calling BizTalk WCF service",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3243
+  },
+  "FileAttachments": [
+    {
+      "FileId": 1446,
+      "FileName": "AdvWrksProductWsdl.xml",
+      "DownloadUrl": ".\\1446"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "WCF is not supported by Storm.  Perhaps you'd be interested in WCFStorm(http://www.wcfstorm.com)?",
+      "PostedDate": "2009-05-25T07:01:31.38-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:39:52.07-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

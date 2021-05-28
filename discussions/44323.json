@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "147536",
+    "ThreadId": "44323",
+    "Html": "I am trying to connect to a web service that is hosted on an IIS server.&nbsp; The web service requires an HTTPS connection and a user name &amp; password.&nbsp; The IIS site's security is configured for &quot;Basic&quot; authentication.<br>\r\n<br>\r\nI see that I can enter a WebServiceUsername &amp; WebServicePassword in the Configuration area (lower left of the GUI) *after* connection has been established with the web service and a method is being called, but I am not seeing how to get those credentials to be used when connecting to the URL in order to retrieve the WSDL.<br>\r\n<br>\r\nSuggestions?&nbsp; <br>\r\n<br>\r\nThanks&nbsp; :)<br>\r\n",
+    "PostedDate": "2009-01-15T16:32:31.27-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "152775",
+    "ThreadId": "44323",
+    "Html": "You should be able to set the user/passwd from the <br>\r\n<br>\r\n                Configuration Menu -&gt; Service tab <br>\r\n<br>\r\nbefore discovering the wsdl. Also please see the related issue <a href=\"http://www.codeplex.com/storm/WorkItem/View.aspx?WorkItemId=2180\">http://www.codeplex.com/storm/WorkItem/View.aspx?WorkItemId=2180</a> which has already been fixed\r\n",
+    "PostedDate": "2009-01-30T22:02:09.053-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "172141",
+    "ThreadId": "44323",
+    "Html": "Hi<br>\r\ni am trying to access a web service that uses Basic Authentication<br>\r\nnon of the configuration (proxy credentials or use default credentials under web services in config ) work<br>\r\n<br>\r\nyou say to enter in the service tab, but there is only Proxy credentials boxes, but no boxes for web services.<br>\r\n<br>\r\nif i change the setting on my web service to accept Integrated Auth, i get connected, and then i can override the web service credentials on the bottom left of the screen under Misc tab , but how can i enter these credentials at the first place while my site uses Basic auth .<br>\r\n<br>\r\nthanks for the great software..<br>\r\n",
+    "PostedDate": "2009-03-25T21:24:03.527-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

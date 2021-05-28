@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ab7002b3-094a-472b-809b-3df1a3ee74a3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StormMain</RootNamespace>
+    <AssemblyName>Storm</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Name>Storm</Name>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <Win32ResourceFile>
+    </Win32ResourceFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OtherFlags>--standalone --win32res icon.res</OtherFlags>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="utils.general.fs" />
+    <Compile Include="types.config.fs" />
+    <Compile Include="types.configreader.fs" />
+    <Compile Include="types.ilog.fs" />
+    <Compile Include="utils.logging.fs" />
+    <Compile Include="type.bgworker.fs" />
+    <Compile Include="type.http.openstream.fs" />
+    <Compile Include="type.httpdata.fs" />
+    <Compile Include="type.httpresp.fs" />
+    <Compile Include="type.httprequest.fs" />
+    <Compile Include="types.logmgr.fs" />
+    <Compile Include="types.reflectionmgr.fs" />
+    <Compile Include="types.iwsloader.fs" />
+    <Compile Include="types.iassemblygen.fs" />
+    <Compile Include="type.objectnode.fs" />
+    <Compile Include="types.methodinvoker.fs" />
+    <Compile Include="type.methodtestcase.fs" />
+    <Compile Include="type.webmethodnode.fs" />
+    <Compile Include="type.iwebsvc.fs" />
+    <Compile Include="type.stormproj.fs" />
+    <Compile Include="type.websvcmanager.fs" />
+    <Compile Include="ui.common.fs" />
+    <Compile Include="type.testrunner.fs" />
+    <Compile Include="ui.formtestdatasave.fs" />
+    <Compile Include="ui.formconfig.fs" />
+    <Compile Include="ui.formaddws.fs" />
+    <Compile Include="ui.formquickedit.fs" />
+    <Compile Include="ui.formmain.fs" />
+    <Compile Include="main.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>Accessibility</Name>
+      <AssemblyName>Accessibility.dll</AssemblyName>
+    </Reference>
+    <Reference Include="Ascend, Version=1.0.0.6, Culture=neutral, PublicKeyToken=25c7a393ba3f37cd">
+      <Name>Ascend</Name>
+      <AssemblyName>Ascend.dll</AssemblyName>
+    </Reference>
+    <Reference Include="Ascend.Resources, Version=1.0.0.6, Culture=neutral, PublicKeyToken=9c9aecb37b1e03b6">
+      <Name>Ascend.Resources</Name>
+      <AssemblyName>Ascend.Resources.dll</AssemblyName>
+    </Reference>
+    <Reference Include="Ascend.Windows.Forms, Version=1.0.0.6, Culture=neutral, PublicKeyToken=ecd86ece2d3eb46d">
+      <Name>Ascend.Windows.Forms</Name>
+      <AssemblyName>Ascend.Windows.Forms.dll</AssemblyName>
+    </Reference>
+    <Reference Include="Microsoft.VisualC, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>Microsoft.VisualC</Name>
+      <AssemblyName>Microsoft.VisualC.Dll</AssemblyName>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.Configuration</Name>
+      <AssemblyName>System.configuration.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Configuration.Install, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.Configuration.Install</Name>
+      <AssemblyName>System.Configuration.Install.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System.Data</Name>
+      <AssemblyName>System.Data.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System.Data.OracleClient</Name>
+      <AssemblyName>System.Data.OracleClient.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.Deployment</Name>
+      <AssemblyName>System.Deployment.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.Design</Name>
+      <AssemblyName>System.Design.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.DirectoryServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.DirectoryServices</Name>
+      <AssemblyName>System.DirectoryServices.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.DirectoryServices.Protocols, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.DirectoryServices.Protocols</Name>
+      <AssemblyName>System.DirectoryServices.Protocols.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.Drawing</Name>
+      <AssemblyName>System.Drawing.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Drawing.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.Drawing.Design</Name>
+      <AssemblyName>System.Drawing.Design.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.EnterpriseServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.EnterpriseServices</Name>
+      <AssemblyName>System.EnterpriseServices.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System.Runtime.Remoting</Name>
+      <AssemblyName>System.Runtime.Remoting.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System.Runtime.Serialization</Name>
+      <AssemblyName>System.Runtime.Serialization.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.Runtime.Serialization.Formatters.Soap</Name>
+      <AssemblyName>System.Runtime.Serialization.Formatters.Soap.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.Security</Name>
+      <AssemblyName>System.Security.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.ServiceProcess, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.ServiceProcess</Name>
+      <AssemblyName>System.ServiceProcess.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System.Transactions</Name>
+      <AssemblyName>System.Transactions.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.Web</Name>
+      <AssemblyName>System.Web.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Web.RegularExpressions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.Web.RegularExpressions</Name>
+      <AssemblyName>System.Web.RegularExpressions.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.Web.Services</Name>
+      <AssemblyName>System.Web.Services.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System.Windows.Forms</Name>
+      <AssemblyName>System.Windows.Forms.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System.Xml</Name>
+      <AssemblyName>System.XML.dll</AssemblyName>
+    </Reference>
+    <Reference Include="XmlDiffPatch, Version=1.0.8.28, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>XmlDiffPatch</Name>
+      <AssemblyName>xmldiffpatch.dll</AssemblyName>
+      <HintPath>..\Backup\xmldiffpatch.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XmlDiffPatch.View, Version=1.0.1493.40755, Culture=neutral, PublicKeyToken=null">
+      <Name>XmlDiffPatch.View</Name>
+      <AssemblyName>XmlDiffPatch.View.dll</AssemblyName>
+      <HintPath>..\Backup\XmlDiffPatch.View.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <ProjectReference Include="..\Storm.CS.Lib\Storm.CS.Lib.csproj">
+      <Name>Storm.CS.Lib</Name>
+      <Project>{421987ea-8c83-4544-8eb5-4cafb431ac5a}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Storm.FS.Lib\Storm.FS.Lib.fsproj">
+      <Name>Storm.FS.Lib</Name>
+      <Project>{65876af9-3661-4051-b614-1e0b8cf0f91a}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Storm.UI\Storm.UI.csproj">
+      <Name>Storm.UI</Name>
+      <Project>{d6829f54-f7f8-4c9e-b7e7-30bcdcde5ff9}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\FSharp\1.0\Microsoft.FSharp.Targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	     Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>

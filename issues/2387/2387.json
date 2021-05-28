@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "ascend dlls already included in the release files",
+    "ClosedDate": "2008-10-03T02:04:10.443-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I just downloaded 1.0, and a System.TypeInitializationException occurs on startup.  Here is the message:\n \n\"Could not load file or assembly 'Ascend.Windows.Forms, Version=1.0.0.6, Culture=neutral, PublicKeyToken=ecd86ece2d3eb46d' or one of its dependencies. The system cannot find the file specified.\"",
+    "LastUpdatedDate": "2013-05-16T03:46:30.667-07:00",
+    "PlannedForRelease": "Storm_r1.0-Adarna release",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "storm",
+    "ReportedDate": "2008-09-29T08:13:54.21-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "1.0 Adarna, Exception on startup",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2387
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Sorry about that. I forgot to add the Ascend DLL's in the zip file. I have added it now. :)",
+      "PostedDate": "2008-09-29T18:45:47.18-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-09-29T18:47:19.333-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-10-03T02:04:10.443-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:39:54.103-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:46:30.667-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

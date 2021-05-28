@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi, my name is Luis molina, I had to access a web service with this uri https://ws128.juntadeandalucia.es/agriculturaypesca/siggan/services/sigganwsregistro?wsdl , I’m going crazy and even your app STORM can’t access it, although you can access the wsdl via browser or via soapui pro for example, so I suppose we are not doing it well.",
+    "LastUpdatedDate": "2013-02-21T15:39:50.33-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "storm",
+    "ReportedDate": "2012-01-04T08:44:12.82-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "problem with axis services",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 9770
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

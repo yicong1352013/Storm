@@ -1,0 +1,161 @@
+"General"
+{
+"SccProjectName" = "SAK"
+"SccLocalPath" = "SAK"
+"SccAuxPath" = "SAK"
+"SccProvider" = "SAK"
+"ProjectIdGuid" = "{717E9B14-6F76-47A2-BDA2-22E046F987A1}"
+}
+"Configurations"
+{
+    "Debug|Win32"
+    {
+    "ProjectType" = "WINEXE"
+    "OptLevel" = "3"
+    "StrongNamingLevel" = "None"
+    "OutputPath" = ""
+    "SearchPath" = "-r \"Storm.CS.Lib.dll\" -r \"Storm.FS.Lib.dll\" -r \"Storm.UI.dll\" -r \"Ascend.dll\" -r \"Ascend.Resources.dll\" -r \"Ascend.Windows.Forms.dll\"  -r \"System.Configuration.dll\" -r \"System.Security.dll\" -r \"Storm.CS.Lib.dll\" --win32res \"icon.res\""
+    "StrongNameFile" = ""
+    "OutputBase" = ""
+    "CustomCommandLine" = ""
+    "CustomCompiler" = ""
+    "DebugCheck" = "TRUE"
+    "CustomCompilationCheck" = "FALSE"
+    "DebugStartMode" = "0"
+    "StartApp" = ""
+    "StartAppPath" = ""
+    "CustomStartupArguments" = ""
+    }
+    "Release|Win32"
+    {
+    "ProjectType" = "WINEXE"
+    "OptLevel" = "3"
+    "StrongNamingLevel" = "None"
+    "OutputPath" = ""
+    "SearchPath" = "-r \"System.Web.RegularExpressions.dll\" -r \"System.Drawing.Design.dll\" -r \"Accessibility.dll\" -r \"System.DirectoryServices.dll\" -r \"System.Design.dll\" -r  \"System.EnterpriseServices.dll\" -r \"System.Transactions.dll\" -r \"System.Data.OracleClient.dll\" -r \"Storm.UI.dll\" -r \"Storm.CS.Lib.dll\" -r \"Ascend.dll\" -r \"Ascend.Resources.dll\" -r \"Ascend.Windows.Forms.dll\"  -r \"System.Configuration.dll\" -r \"System.Security.dll\"  --win32res \"icon.res\"  --standalone"
+    "StrongNameFile" = ""
+    "OutputBase" = ""
+    "CustomCommandLine" = ""
+    "CustomCompiler" = ""
+    "DebugCheck" = "TRUE"
+    "CustomCompilationCheck" = "FALSE"
+    "DebugStartMode" = "0"
+    "StartApp" = ""
+    "StartAppPath" = ""
+    "CustomStartupArguments" = ""
+    }
+}
+"Files"
+{
+    "type.netextensions.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "utils.general.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "types. config.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "types.configreader.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "types.ilog.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "utils.logging.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "type.bgworker.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "type.http.openstream.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "type.httpdata..fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "type.httpresp.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "type.httprequest.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "types.logmgr.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "types.reflectionmgr.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "types.iwsloader.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "types.iassemblygen.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "type.objectnode.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "types.methodinvoker.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "type.iwebsvc.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "type.stormproj.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "type.websvcmanager.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "ui.formtestdatasave.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "ui.formconfig.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "ui.formaddws.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "ui.formquickedit.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "ui.formmain.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    "main.fs"
+    {
+    "ProjRelPath" = "T"
+    }
+    
+}
+"ProjStartupServices"
+{
+}
+"Globals"
+{
+}

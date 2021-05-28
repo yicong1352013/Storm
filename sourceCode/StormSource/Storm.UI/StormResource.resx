@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ws" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\chart_organisation.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bullet_blue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plugin_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\plugin_add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\clock.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="webservice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\chart_line.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="transmit_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\transmit_blue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\arrow_right.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xhtml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\xhtml.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="defaultssXsl" xml:space="preserve">
+    <value>&lt;!--
+ |
+ | XSLT REC Compliant Version of IE5 Default Stylesheet
+ |
+ | Original version by Jonathan Marsh (jmarsh@xxxxxxxxxxxxx)
+ | http://msdn.microsoft.com/xml/samples/defaultss/defaultss.xsl
+ |
+ | Conversion to XSLT 1.0 REC Syntax by Steve Muench (smuench@xxxxxxxxxx)
+ |
+ +--&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:output indent="no" method="html"/&gt;
+	&lt;xsl:template match="/"&gt;
+		&lt;HTML&gt;
+			&lt;HEAD&gt;
+				&lt;SCRIPT&gt;
+					&lt;xsl:comment&gt;&lt;![CDATA[
+                  function f(e){
+                     if (e.className=="ci") {
+                       if (e.children(0).innerText.indexOf("\n")&gt;0) fix(e,"cb");
+                     }
+                     if (e.className=="di") {
+                       if (e.children(0).innerText.indexOf("\n")&gt;0) fix(e,"db");
+                     } e.id="";
+                  }
+                  function fix(e,cl){
+                    e.className=cl;
+                    e.style.display="block";
+                    j=e.parentElement.children(0);
+                    j.className="c";
+                    k=j.children(0);
+                    k.style.visibility="visible";
+                    k.href="#";
+                  }
+                  function ch(e) {
+                    mark=e.children(0).children(0);
+                    if (mark.innerText=="+") {
+                      mark.innerText="-";
+                      for (var i=1;i&lt;e.children.length;i++) {
+                        e.children(i).style.display="block";
+                      }
+                    }
+                    else if (mark.innerText=="-") {
+                      mark.innerText="+";
+                      for (var i=1;i&lt;e.children.length;i++) {
+                        e.children(i).style.display="none";
+                      }
+                    }
+                  }
+                  function ch2(e) {
+                    mark=e.children(0).children(0);
+                    contents=e.children(1);
+                    if (mark.innerText=="+") {
+                      mark.innerText="-";
+                      if (contents.className=="db"||contents.className=="cb") {
+                        contents.style.display="block";
+                      }
+                      else {
+                        contents.style.display="inline";
+                      }
+                    }
+                    else if (mark.innerText=="-") {
+                      mark.innerText="+";
+                      contents.style.display="none";
+                    }
+                  }
+                  function cl() {
+                    e=window.event.srcElement;
+                    if (e.className!="c") {
+                      e=e.parentElement;
+                      if (e.className!="c") {
+                        return;
+                      }
+                    }
+                    e=e.parentElement;
+                    if (e.className=="e") {
+                      ch(e);
+                    }
+                    if (e.className=="k") {
+                      ch2(e);
+                    }
+                  }
+                  function ex(){}
+                  function h(){window.status=" ";}
+                  document.onclick=cl;
+              ]]&gt;&lt;/xsl:comment&gt;
+				&lt;/SCRIPT&gt;
+				&lt;STYLE&gt;
+              BODY {font:x-small 'Verdana'; margin-right:1.5em}
+                .c  {cursor:hand}
+                .b  {color:red; font-family:'Courier New'; font-weight:bold;
+                     text-decoration:none}
+                .e  {margin-left:1em; text-indent:-1em; margin-right:1em}
+                .k  {margin-left:1em; text-indent:-1em; margin-right:1em}
+                .t  {color:#990000}
+                .xt {color:#990099}
+                .ns {color:red}
+                .dt {color:green}
+                .m  {color:blue}
+                .tx {font-weight:bold}
+                .db {text-indent:0px; margin-left:1em; margin-top:0px;
+                     margin-bottom:0px;padding-left:.3em;
+                     border-left:1px solid #CCCCCC; font:small Courier}
+                .di {font:small Courier}
+                .d  {color:blue}
+                .pi {color:blue}
+                .cb {text-indent:0px; margin-left:1em; margin-top:0px;
+                     margin-bottom:0px;padding-left:.3em; font:small Courier;
+                     color:#888888}
+                .ci {font:small Courier; color:#888888}
+                PRE {margin:0px; display:inline}
+           &lt;/STYLE&gt;
+			&lt;/HEAD&gt;
+			&lt;BODY class="st"&gt;
+				&lt;xsl:apply-templates/&gt;
+			&lt;/BODY&gt;
+		&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template match="processing-instruction()"&gt;
+		&lt;DIV class="e"&gt;
+			&lt;SPAN class="b"&gt;
+				&lt;xsl:call-template name="entity-ref"&gt;
+					&lt;xsl:with-param name="name"&gt;nbsp&lt;/xsl:with-param&gt;
+				&lt;/xsl:call-template&gt;
+			&lt;/SPAN&gt;
+			&lt;SPAN class="m"&gt;
+				&lt;xsl:text&gt;&amp;lt;?&lt;/xsl:text&gt;
+			&lt;/SPAN&gt;
+			&lt;SPAN class="pi"&gt;
+				&lt;xsl:value-of select="name(.)"/&gt;
+				&lt;xsl:value-of select="."/&gt;
+			&lt;/SPAN&gt;
+			&lt;SPAN class="m"&gt;
+				&lt;xsl:text&gt;?&gt;&lt;/xsl:text&gt;
+			&lt;/SPAN&gt;
+		&lt;/DIV&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template match="processing-instruction('xml')"&gt;
+		&lt;DIV class="e"&gt;
+			&lt;SPAN class="b"&gt;
+				&lt;xsl:call-template name="entity-ref"&gt;
+					&lt;xsl:with-param name="name"&gt;nbsp&lt;/xsl:with-param&gt;
+				&lt;/xsl:call-template&gt;
+			&lt;/SPAN&gt;
+			&lt;SPAN class="m"&gt;
+				&lt;xsl:text&gt;&amp;lt;?&lt;/xsl:text&gt;
+			&lt;/SPAN&gt;
+			&lt;SPAN class="pi"&gt;
+				&lt;xsl:text&gt;xml &lt;/xsl:text&gt;
+				&lt;xsl:for-each select="@*"&gt;
+					&lt;xsl:value-of select="name(.)"/&gt;
+					&lt;xsl:text&gt;="&lt;/xsl:text&gt;
+					&lt;xsl:value-of select="."/&gt;
+					&lt;xsl:text&gt;" &lt;/xsl:text&gt;
+				&lt;/xsl:for-each&gt;
+			&lt;/SPAN&gt;
+			&lt;SPAN class="m"&gt;
+				&lt;xsl:text&gt;?&gt;&lt;/xsl:text&gt;
+			&lt;/SPAN&gt;
+		&lt;/DIV&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template match="@*"&gt;
+		&lt;SPAN&gt;
+			&lt;xsl:attribute name="class"&gt;&lt;xsl:if test="xsl:*/@*"&gt;&lt;xsl:text&gt;x&lt;/xsl:text&gt;&lt;/xsl:if&gt;&lt;xsl:text&gt;t&lt;/xsl:text&gt;&lt;/xsl:attribute&gt;
+			&lt;xsl:value-of select="name(.)"/&gt;
+		&lt;/SPAN&gt;
+		&lt;SPAN class="m"&gt;="&lt;/SPAN&gt;
+		&lt;B&gt;
+			&lt;xsl:value-of select="."/&gt;
+		&lt;/B&gt;
+		&lt;SPAN class="m"&gt;"&lt;/SPAN&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template match="text()"&gt;
+		&lt;DIV class="e"&gt;
+			&lt;SPAN class="b"&gt; &lt;/SPAN&gt;
+			&lt;SPAN class="tx"&gt;
+				&lt;xsl:value-of select="."/&gt;
+			&lt;/SPAN&gt;
+		&lt;/DIV&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template match="comment()"&gt;
+		&lt;DIV class="k"&gt;
+			&lt;SPAN&gt;
+				&lt;A STYLE="visibility:hidden" class="b" onclick="return false" onfocus="h()"&gt;-&lt;/A&gt;
+				&lt;SPAN class="m"&gt;
+					&lt;xsl:text&gt;&amp;lt;!--&lt;/xsl:text&gt;
+				&lt;/SPAN&gt;
+			&lt;/SPAN&gt;
+			&lt;SPAN class="ci" id="clean"&gt;
+				&lt;PRE&gt;
+					&lt;xsl:value-of select="."/&gt;
+				&lt;/PRE&gt;
+			&lt;/SPAN&gt;
+			&lt;SPAN class="b"&gt;
+				&lt;xsl:call-template name="entity-ref"&gt;
+					&lt;xsl:with-param name="name"&gt;nbsp&lt;/xsl:with-param&gt;
+				&lt;/xsl:call-template&gt;
+			&lt;/SPAN&gt;
+			&lt;SPAN class="m"&gt;
+				&lt;xsl:text&gt;--&gt;&lt;/xsl:text&gt;
+			&lt;/SPAN&gt;
+			&lt;SCRIPT&gt;f(clean);&lt;/SCRIPT&gt;
+		&lt;/DIV&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template match="*"&gt;
+		&lt;DIV class="e"&gt;
+			&lt;DIV STYLE="margin-left:1em;text-indent:-2em"&gt;
+				&lt;SPAN class="b"&gt;
+					&lt;xsl:call-template name="entity-ref"&gt;
+						&lt;xsl:with-param name="name"&gt;nbsp&lt;/xsl:with-param&gt;
+					&lt;/xsl:call-template&gt;
+				&lt;/SPAN&gt;
+				&lt;SPAN class="m"&gt;&amp;lt;&lt;/SPAN&gt;
+				&lt;SPAN&gt;
+					&lt;xsl:attribute name="class"&gt;&lt;xsl:if test="xsl:*"&gt;&lt;xsl:text&gt;x&lt;/xsl:text&gt;&lt;/xsl:if&gt;&lt;xsl:text&gt;t&lt;/xsl:text&gt;&lt;/xsl:attribute&gt;
+					&lt;xsl:value-of select="name(.)"/&gt;
+					&lt;xsl:if test="@*"&gt;
+						&lt;xsl:text&gt; &lt;/xsl:text&gt;
+					&lt;/xsl:if&gt;
+				&lt;/SPAN&gt;
+				&lt;xsl:apply-templates select="@*"/&gt;
+				&lt;SPAN class="m"&gt;
+					&lt;xsl:text&gt;/&gt;&lt;/xsl:text&gt;
+				&lt;/SPAN&gt;
+			&lt;/DIV&gt;
+		&lt;/DIV&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template match="*[node()]"&gt;
+		&lt;DIV class="e"&gt;
+			&lt;DIV class="c"&gt;
+				&lt;A class="b" href="#" onclick="return false" onfocus="h()"&gt;-&lt;/A&gt;
+				&lt;SPAN class="m"&gt;&amp;lt;&lt;/SPAN&gt;
+				&lt;SPAN&gt;
+					&lt;xsl:attribute name="class"&gt;&lt;xsl:if test="xsl:*"&gt;&lt;xsl:text&gt;x&lt;/xsl:text&gt;&lt;/xsl:if&gt;&lt;xsl:text&gt;t&lt;/xsl:text&gt;&lt;/xsl:attribute&gt;
+					&lt;xsl:value-of select="name(.)"/&gt;
+					&lt;xsl:if test="@*"&gt;
+						&lt;xsl:text&gt; &lt;/xsl:text&gt;
+					&lt;/xsl:if&gt;
+				&lt;/SPAN&gt;
+				&lt;xsl:apply-templates select="@*"/&gt;
+				&lt;SPAN class="m"&gt;
+					&lt;xsl:text&gt;&gt;&lt;/xsl:text&gt;
+				&lt;/SPAN&gt;
+			&lt;/DIV&gt;
+			&lt;DIV&gt;
+				&lt;xsl:apply-templates/&gt;
+				&lt;DIV&gt;
+					&lt;SPAN class="b"&gt;
+						&lt;xsl:call-template name="entity-ref"&gt;
+							&lt;xsl:with-param name="name"&gt;nbsp&lt;/xsl:with-param&gt;
+						&lt;/xsl:call-template&gt;
+					&lt;/SPAN&gt;
+					&lt;SPAN class="m"&gt;
+						&lt;xsl:text&gt;&amp;lt;/&lt;/xsl:text&gt;
+					&lt;/SPAN&gt;
+					&lt;SPAN&gt;
+						&lt;xsl:attribute name="class"&gt;&lt;xsl:if test="xsl:*"&gt;&lt;xsl:text&gt;x&lt;/xsl:text&gt;&lt;/xsl:if&gt;&lt;xsl:text&gt;t&lt;/xsl:text&gt;&lt;/xsl:attribute&gt;
+						&lt;xsl:value-of select="name(.)"/&gt;
+					&lt;/SPAN&gt;
+					&lt;SPAN class="m"&gt;
+						&lt;xsl:text&gt;&gt;&lt;/xsl:text&gt;
+					&lt;/SPAN&gt;
+				&lt;/DIV&gt;
+			&lt;/DIV&gt;
+		&lt;/DIV&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template match="*[text() and not (comment() or processing-instruction())]"&gt;
+		&lt;DIV class="e"&gt;
+			&lt;DIV STYLE="margin-left:1em;text-indent:-2em"&gt;
+				&lt;SPAN class="b"&gt;
+					&lt;xsl:call-template name="entity-ref"&gt;
+						&lt;xsl:with-param name="name"&gt;nbsp&lt;/xsl:with-param&gt;
+					&lt;/xsl:call-template&gt;
+				&lt;/SPAN&gt;
+				&lt;SPAN class="m"&gt;
+					&lt;xsl:text&gt;&amp;lt;&lt;/xsl:text&gt;
+				&lt;/SPAN&gt;
+				&lt;SPAN&gt;
+					&lt;xsl:attribute name="class"&gt;&lt;xsl:if test="xsl:*"&gt;&lt;xsl:text&gt;x&lt;/xsl:text&gt;&lt;/xsl:if&gt;&lt;xsl:text&gt;t&lt;/xsl:text&gt;&lt;/xsl:attribute&gt;
+					&lt;xsl:value-of select="name(.)"/&gt;
+					&lt;xsl:if test="@*"&gt;
+						&lt;xsl:text&gt; &lt;/xsl:text&gt;
+					&lt;/xsl:if&gt;
+				&lt;/SPAN&gt;
+				&lt;xsl:apply-templates select="@*"/&gt;
+				&lt;SPAN class="m"&gt;
+					&lt;xsl:text&gt;&gt;&lt;/xsl:text&gt;
+				&lt;/SPAN&gt;
+				&lt;SPAN class="tx"&gt;
+					&lt;xsl:value-of select="."/&gt;
+				&lt;/SPAN&gt;
+				&lt;SPAN class="m"&gt;&amp;lt;/&lt;/SPAN&gt;
+				&lt;SPAN&gt;
+					&lt;xsl:attribute name="class"&gt;&lt;xsl:if test="xsl:*"&gt;&lt;xsl:text&gt;x&lt;/xsl:text&gt;&lt;/xsl:if&gt;&lt;xsl:text&gt;t&lt;/xsl:text&gt;&lt;/xsl:attribute&gt;
+					&lt;xsl:value-of select="name(.)"/&gt;
+				&lt;/SPAN&gt;
+				&lt;SPAN class="m"&gt;
+					&lt;xsl:text&gt;&gt;&lt;/xsl:text&gt;
+				&lt;/SPAN&gt;
+			&lt;/DIV&gt;
+		&lt;/DIV&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template match="*[*]" priority="20"&gt;
+		&lt;DIV class="e"&gt;
+			&lt;DIV STYLE="margin-left:1em;text-indent:-2em" class="c"&gt;
+				&lt;A class="b" href="#" onclick="return false" onfocus="h()"&gt;-&lt;/A&gt;
+				&lt;SPAN class="m"&gt;&amp;lt;&lt;/SPAN&gt;
+				&lt;SPAN&gt;
+					&lt;xsl:attribute name="class"&gt;&lt;xsl:if test="xsl:*"&gt;&lt;xsl:text&gt;x&lt;/xsl:text&gt;&lt;/xsl:if&gt;&lt;xsl:text&gt;t&lt;/xsl:text&gt;&lt;/xsl:attribute&gt;
+					&lt;xsl:value-of select="name(.)"/&gt;
+					&lt;xsl:if test="@*"&gt;
+						&lt;xsl:text&gt; &lt;/xsl:text&gt;
+					&lt;/xsl:if&gt;
+				&lt;/SPAN&gt;
+				&lt;xsl:apply-templates select="@*"/&gt;
+				&lt;SPAN class="m"&gt;
+					&lt;xsl:text&gt;&gt;&lt;/xsl:text&gt;
+				&lt;/SPAN&gt;
+			&lt;/DIV&gt;
+			&lt;DIV&gt;
+				&lt;xsl:apply-templates/&gt;
+				&lt;DIV&gt;
+					&lt;SPAN class="b"&gt;
+						&lt;xsl:call-template name="entity-ref"&gt;
+							&lt;xsl:with-param name="name"&gt;nbsp&lt;/xsl:with-param&gt;
+						&lt;/xsl:call-template&gt;
+					&lt;/SPAN&gt;
+					&lt;SPAN class="m"&gt;
+						&lt;xsl:text&gt;&amp;lt;/&lt;/xsl:text&gt;
+					&lt;/SPAN&gt;
+					&lt;SPAN&gt;
+						&lt;xsl:attribute name="class"&gt;&lt;xsl:if test="xsl:*"&gt;&lt;xsl:text&gt;x&lt;/xsl:text&gt;&lt;/xsl:if&gt;&lt;xsl:text&gt;t&lt;/xsl:text&gt;&lt;/xsl:attribute&gt;
+						&lt;xsl:value-of select="name(.)"/&gt;
+					&lt;/SPAN&gt;
+					&lt;SPAN class="m"&gt;
+						&lt;xsl:text&gt;&gt;&lt;/xsl:text&gt;
+					&lt;/SPAN&gt;
+				&lt;/DIV&gt;
+			&lt;/DIV&gt;
+		&lt;/DIV&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template name="entity-ref"&gt;
+		&lt;xsl:param name="name"/&gt;
+		&lt;xsl:text disable-output-escaping="yes"&gt;&amp;amp;&lt;/xsl:text&gt;
+		&lt;xsl:value-of select="$name"/&gt;
+		&lt;xsl:text&gt;;&lt;/xsl:text&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="color_fill22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\color_fill.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="colorize22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\colorize.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="configure22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\configure.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text_block16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\text_block.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quickedit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\gg_connecting.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="resources" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\resources.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="signal_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\signal-1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agt_action_success" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\agt_action_success.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="accept" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\accept.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="application_lightning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\application_lightning.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bullet_green.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bullet_orange.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bullet_red.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_add22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\edit_add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_remove22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\edit_remove.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\lightning.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="money_dollar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\money_dollar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="restart_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\restart-1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seyon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\seyon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\tag.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\wrench.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SplashMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SplashMain.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="disk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\disk.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_blank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bullet_blank.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\folder.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_link" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\folder_link.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_purple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bullet_purple.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\book_open.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_page_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\folder_page_white.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="note" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\note.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shape_align_bottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\shape_align_bottom.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_go" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bullet_go.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_donate_SM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\btn_donate_SM.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Chat.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StormLogo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\StormLogo2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

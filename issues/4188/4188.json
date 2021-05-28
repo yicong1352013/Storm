@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Does not work with https/ssl web services if certificate isn't OK.\n \nFails with: \"Could not establish trust relationship for the SSL/TLS secure channel\"\n \nI usually solve this with C# code:\n \n  System.Net.ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };",
+    "LastUpdatedDate": "2013-02-21T15:39:51.68-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "storm",
+    "ReportedDate": "2009-09-02T13:13:45.617-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Untrusted Https/SSL does not work",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 4188
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I have the same problem. It's relatively easy to fix on your side, but until this line is incorporated I cannot test SSL services using self-signed certificates (usually the case in development mode)",
+      "PostedDate": "2011-07-26T02:56:07.21-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:39:51.68-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

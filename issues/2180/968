@@ -1,0 +1,10 @@
+POST /Repository.asmx HTTP/1.1
+Accept: */*
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "http://metadataservice.hosts.network/GetEntity"
+Host: metadata.hha.dev.edc:1315
+Content-Length: 342
+Expect: 100-continue
+Connection: Keep-Alive
+
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetEntity xmlns="http://metadataservice.hosts.network/"><entityId>168739</entityId></GetEntity></soap:Body></soap:Envelope>

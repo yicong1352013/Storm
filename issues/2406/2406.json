@@ -1,0 +1,75 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hello,\n \nI added a web service and then I got a System.ArgumentOutOfRangeException.\nHere is the output:\n \nhttp://v-ws2003-1:8001/Polyright.PWS.WsForReaderApps.Host/Card.svc?wsdl\nloading http://v-ws2003-1:8001/Polyright.PWS.WsForReaderApps.Host/Card.svc?wsdl\nAcquiring the wsdl...\nResolving the wsdlendpoint...\nGenerating code...\nCode generated successfully.\nCompiling into an assembly...\nSystem.ArgumentOutOfRangeException: La longueur ne peut pas être inférieure à zéro.\nNom du paramètre : length\n   à System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)\n   à Storm.CS.Lib.Soap.StormDefaultSoap.LoadFrom(String fromDefWsdlHelp)\n   à Storm.CS.Lib.Soap.StormSoapMessages.GetDefaultSoapMessage(String operationName, Boolean useSoap12)\n   à Storm.CS.Lib.Soap.StormSoapMessages.GetDefaultSoapMessages(Boolean useSoap12)\n   à Storm.Types.WebSvcManagerOps.clo@90.CreateWebServiceModel()\n   à <StartupCode$Storm>.$Type.bgworker.run@51@57_2.Invoke(DoWorkEventArgs dArgs)\n   à <StartupCode$Storm>.$Type.bgworker.run@51@57_1.Invoke(Object sender, DoWorkEventArgs e)\n   à System.ComponentModel.BackgroundWorker.OnDoWork(DoWorkEventArgs e)\n   à System.ComponentModel.BackgroundWorker.WorkerThreadStart(Object argument)\n \nI don't know if this is related to the web service or to Storm.\nI also tried wth two other web services with the same result.\n \nThanks\nAdriano",
+    "LastUpdatedDate": "2013-02-21T15:39:53.467-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "storm",
+    "ReportedDate": "2008-10-03T03:10:49.19-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "ArgumentOutOfRangeException after adding a web service",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2406
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Can you please attach the wsdl, schemas etc. ?\r\n\r\n~Erik",
+      "PostedDate": "2008-10-03T22:29:33.687-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Hi Adriano,\r\n\r\n      This error occured because the response from the web service was empty or incorrect (the <?xml tag was missing).  Can you please provide the error that was generated prior to this one? Thanks\r\n\r\n~Erik",
+      "PostedDate": "2008-10-05T19:40:52.483-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Hi Erik,\r\n\r\nI don't know what error prior to this one you mean. I just opened Storm, clicked on Add the web service, entered the Url, that all.\r\nThe pasted error in my previous post is taken from the Storm tool. I didn't found any log file, so tell me exactly what you need.\r\n\r\nThe web service was developed with the Web Service Software Factory Modeling Edition. Do you need the WCF web service metadata?\r\n\r\nThanks.\r\nAdriano",
+      "PostedDate": "2008-10-06T06:20:41.81-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Hi Adriano,\r\n\r\n       Sorry about that.  I forgot that you pasted the error int he first post... \r\n\r\n       For the moment, for WCF services to work with the tool, you need to configure it to use basicHttpBinding or (I dont know if there is a difference) have the implementation technology as ASMX Extension.  I need to find time to learn about WCF so I can add support for it.\r\n\r\n~Erik",
+      "PostedDate": "2008-10-06T19:53:17.553-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Thank you Erik for your input.\r\n\r\nAbout my implementation, it is defined with aspNetCompatibilityEnabled=\"true\" and I thought it could work with Storm.\r\nSo I will wait for a support of WCF web services in Storm.\r\n\r\n-adriano",
+      "PostedDate": "2008-10-08T07:12:16.03-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-09-24T05:05:04.333-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:39:53.467-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

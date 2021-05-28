@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "143456",
+    "ThreadId": "43161",
+    "Html": "Hi,<br>\r\n<br>\r\nYour tool is very cool. It's very helpful. Thank you very much. <br>\r\nI'm wondering if there is a way to change the configuartion of this tool so that it can support session tracking? <br>\r\nSpecifically, I saw &quot;useCookiesContainer&quot; field in the source code, and I wonder if it allows to set up a cookies in order to support session.<br>\r\nThanks again.<br>\r\n<br>\r\nChien \r\n",
+    "PostedDate": "2008-12-29T23:54:04.46-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "144915",
+    "ThreadId": "43161",
+    "Html": "Hi Chienchien,<br>\r\n<br>\r\n    Yes, cookie support can be added.  I haven't actually fully implemented the cookie-support because I didn't not many people would be using that feature. Anyway, I'll add that when I find some time. :)<br>\r\n<br>\r\n~Erik\r\n",
+    "PostedDate": "2009-01-06T17:22:37.71-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

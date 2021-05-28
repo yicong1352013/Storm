@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "123845",
+    "ThreadId": "37326",
+    "Html": "$0Ignore Invalid Certificates option.$0$0$0$0Hello, and thank you for creating this great tool.  I would like to start a thread on which users may make wishful Feature Requests that dont qualify as Issues.$0$0$0I'd also like to make the first feature request:  An option to Ignore Invalid Certificates.  Many times the development environment has a makeshift SSL certificate, or uses the same certificate as the production environment but the domain names do not match.  $0$0$0$0$0",
+    "PostedDate": "2008-10-08T12:17:24.787-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

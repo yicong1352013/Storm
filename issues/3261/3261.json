@@ -1,0 +1,61 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Currently, STORM only sends requests to the endpoint that is specified in the WSDL in the <SOAP:address /> element.  In order to test services across many machines, STORM should allow the URL of the service to be changed within the form.",
+    "LastUpdatedDate": "2013-02-21T15:39:51.897-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "storm",
+    "ReportedDate": "2009-02-26T07:50:36.12-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Need ability to change endpoint via forms",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3261
+  },
+  "FileAttachments": [
+    {
+      "FileId": 1468,
+      "FileName": "EndpointRedirect-Storm.png",
+      "DownloadUrl": ".\\1468"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "There is a workaround for this in the current release. The endpoint can be changed by invoking the web service from \"Raw View\" or \"Xml View\".  In the Configuration portion (lower-left), Request Tab, the URL can be edited to point to another endpoint before invoking the service.\r\n\r\n",
+      "PostedDate": "2009-03-08T19:23:39.717-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-03-08T19:23:41.607-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:39:51.897-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2008-10-03T02:04:59.27-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "dear namigop\nyour tool is very helpful for me thank you:) \nbut i am facing this issues when i tried to work on the source cause i need to get benefit from calling the WS in my project \n1)i have installed the latest F# compiler from  http://research.microsoft.com/fsharp/release.aspx and i open the source after i make build there are some images\ndoesn't exists in the resources folder and this cause problem i.e\n \nError\t24\tInvalid Resx file. Could not find file 'C:\\Documents and Settings\\abarqawi\\Desktop\\Firefox Downloads\\storm-5875\\StormSource\\Storm.UI\\Resources\\color_fill.png'. Line 506, position 5.\tC:\\Documents and Settings\\abarqawi\\Desktop\\Firefox Downloads\\storm-5875\\StormSource\\Storm.UI\\StormResource.resx\t506\t5\tStorm.UI\n \n2)i have tried to build the F# project but i encountered 18 error related to abstract class implementation \nsince i don't have experience in F# i cannot manage to fix them i.e\n \nError\t3\tNo implementation was given for 'abstract member LogManager.Log : LogMessage -> unit'.\tC:\\Documents and Settings\\abarqawi\\Desktop\\Firefox Downloads\\storm-5875\\StormSource\\Storm\\types.logmgr.fs\t13\t\n \nError\t6\tThis type is 'abstract' since some abstract members have not been given an implementation. If this is intentional then add the '[<AbstractClass>]' attribute to your type\tC:\\Documents and Settings\\abarqawi\\Desktop\\Firefox Downloads\\storm-5875\\StormSource\\Storm\\types.logmgr.fs\t13\t\n \nare these errors related to the F# version (i am using  F# 1.9.4.15 ) i use or another thing .\n \nthank you for this project really helpful since i am working on a project that extract the WS URL from DB and then execute this WS each providing it\nwith parameters and i need to use your tool.\nyou can see the image for clarification \nthanks",
+    "LastUpdatedDate": "2013-05-16T03:46:31.58-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "storm",
+    "ReportedDate": "2008-05-17T00:03:10.113-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "missing resources and other problems",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 899
+  },
+  "FileAttachments": [
+    {
+      "FileId": 410,
+      "FileName": "Storm.JPG",
+      "DownloadUrl": ".\\410"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Can you please try out the latest source? Unfortunately (for the moment), build errors are not properly propagated into the Error List tab of Visual Studio so you'll need to check the Build Output tab.  \r\n\r\nIf you're still getting errors, please email me the Build Output and I'll see what I can do.\r\n\r\nCheers.\r\n",
+      "PostedDate": "2008-05-20T03:11:02.223-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "i want to get the piece of code responsible for probing the WS and gets the parameters also invoking it\r\ni searched in codeplex and found this article which simply what i need http://www.codeplex.com/wsstudioexpress (its not completed as yours but i found the class in C#)\r\ni extracted this class \"DynamicProxy\" which is whole what i need.\r\ni was using another way that for some web services return \"Internal Server Error code (500)\" but your tool is always returns result\r\ni really need to learn F# it seems professional \r\nthanks you\r\n",
+      "PostedDate": "2008-05-20T04:01:09.72-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "in that case take a look at\r\n\r\n* type.methodinvoker.fs\r\n      - this contains 2 functions, invokeViaReflection and invokeViaHttp. \"invokeViaReflection\" uses, as its name implies, reflection to invoke the web method by passing the proxy(HttpWebClientProtocol) and method parameters (obj[]).  \"invokeViaHttp\" on the other hand uses HttpWebRequest, calling the GetResponse() method directly.\r\n\r\n* If the web service youre dynamically calling is returning an exception, you can catch WebException and take a look at Response property.    \r\n\r\nHope this points you in the right direcotion.",
+      "PostedDate": "2008-05-21T06:55:02.757-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-07-09T08:12:01.23-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-10-03T02:04:59.27-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:39:55.387-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:46:31.58-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

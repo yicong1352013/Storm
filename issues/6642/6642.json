@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\n \nGreat project. Was looking for an alternative to the WCF Test Client because it doesn't allow me to set multiple values of a Flags enum parameter.\n \nStorm accepts it but gives me the following error when I try to invoke:\n \nSystem.Reflection.TargetParameterCountException: Het aantal parameters komt niet overeen.\n   bij System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)\n   bij System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   bij Storm.UI.Forms.FormMainOps.clo@651.Invoke(Object[] methodParams@41)\n   bij <StartupCode$Storm>.$Type.bgworker.run@51@57_2.Invoke(DoWorkEventArgs dArgs)\n   bij <StartupCode$Storm>.$Type.bgworker.run@51@57_1.Invoke(Object sender, DoWorkEventArgs e)\n   bij System.ComponentModel.BackgroundWorker.WorkerThreadStart(Object argument)\n \nIt might have to do with nullable types being used.\n \nRegards, Jacco",
+    "LastUpdatedDate": "2013-02-21T15:39:51.19-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "storm",
+    "ReportedDate": "2010-07-01T04:06:51.98-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Invoke Problem: TargetParameterCountException",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6642
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

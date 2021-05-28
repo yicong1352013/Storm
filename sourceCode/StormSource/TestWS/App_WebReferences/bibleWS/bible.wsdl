@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://bible.sumerano.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://bible.sumerano.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://bible.sumerano.com/">
+      <s:element name="GetTranslations">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTranslationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTranslationsResult" type="tns:ArrayOfBibleTranslation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfBibleTranslation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="BibleTranslation" nillable="true" type="tns:BibleTranslation" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="BibleTranslation">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="BibleNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BibleAbbr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BibleName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetBooks">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TranslationNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Section" type="tns:BookSection" />
+            <s:element minOccurs="1" maxOccurs="1" name="PopulateChapters" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="PopulateVerses" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="BookSection">
+        <s:restriction base="s:string">
+          <s:enumeration value="OldTestament" />
+          <s:enumeration value="NewTestament" />
+          <s:enumeration value="All" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetBooksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBooksResult" type="tns:ArrayOfBook" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfBook">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Book" nillable="true" type="tns:Book" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Book">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="BookNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Section" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BookText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Chapters" type="tns:ArrayOfChapter" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfChapter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Chapter" nillable="true" type="tns:Chapter" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Chapter">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ChapterNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Verses" type="tns:ArrayOfVerse" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfVerse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Verse" nillable="true" type="tns:Verse" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Verse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="VerseNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="VerseText" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetChapters">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TranslationNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="BookNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PopulateVerses" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChaptersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetChaptersResult" type="tns:ArrayOfChapter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVerses">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TranslationNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="BookNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ChapterNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVersesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVersesResult" type="tns:ArrayOfVerse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVerse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TranslationNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="BookNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ChapterNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="VerseNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVerseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVerseResult" type="tns:ArrayOfVerse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVerseRange">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TranslationNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="BookNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ChapterStartNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ChapterEndNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="VerseStartNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="VerseEndNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVerseRangeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVerseRangeResult" type="tns:ArrayOfVerse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRandomVerse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TranslationNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRandomVerseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRandomVerseResult" type="tns:ArrayOfBook" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDefinitions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Word" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MatchExact" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDefinitionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDefinitionsResult" type="tns:ArrayOfDefinition" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDefinition">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Definition" nillable="true" type="tns:Definition" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Definition">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Word" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DefinitionText" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExactMatch" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SearchBible">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TranslationNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Keywords" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Delimiter" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MatchAllWords" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchBibleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchBibleResult" type="tns:ArrayOfSearchResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSearchResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SearchResult" nillable="true" type="tns:SearchResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SearchResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="MatchCount" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Section" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BookNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BookText" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ChapterNo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="VerseNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="VerseText" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetTranslationsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTranslations" />
+  </wsdl:message>
+  <wsdl:message name="GetTranslationsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTranslationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBooksSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBooks" />
+  </wsdl:message>
+  <wsdl:message name="GetBooksSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBooksResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetChaptersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetChapters" />
+  </wsdl:message>
+  <wsdl:message name="GetChaptersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetChaptersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVersesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVerses" />
+  </wsdl:message>
+  <wsdl:message name="GetVersesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVersesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVerseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVerse" />
+  </wsdl:message>
+  <wsdl:message name="GetVerseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVerseResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVerseRangeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVerseRange" />
+  </wsdl:message>
+  <wsdl:message name="GetVerseRangeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVerseRangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRandomVerseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRandomVerse" />
+  </wsdl:message>
+  <wsdl:message name="GetRandomVerseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRandomVerseResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDefinitionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDefinitions" />
+  </wsdl:message>
+  <wsdl:message name="GetDefinitionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDefinitionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchBibleSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchBible" />
+  </wsdl:message>
+  <wsdl:message name="SearchBibleSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchBibleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BibleSoap">
+    <wsdl:operation name="GetTranslations">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Returns a list of available Bible translations.</documentation>
+      <wsdl:input message="tns:GetTranslationsSoapIn" />
+      <wsdl:output message="tns:GetTranslationsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBooks">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Returns a list of all books within the bible.  You have the option of returning all books or a specific section (Old Testament or New Testament).  If PopulateChapters and PopulateVerses are set to True, the *entire* Bible text will be returned.</documentation>
+      <wsdl:input message="tns:GetBooksSoapIn" />
+      <wsdl:output message="tns:GetBooksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChapters">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Returns a list of chapters within a particular Book.  If PopulateVerses is set to True, the verses within each chapter will be returned.</documentation>
+      <wsdl:input message="tns:GetChaptersSoapIn" />
+      <wsdl:output message="tns:GetChaptersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVerses">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Returns a list of verses within a particular Book and Chapter.</documentation>
+      <wsdl:input message="tns:GetVersesSoapIn" />
+      <wsdl:output message="tns:GetVersesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVerse">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Returns a single verse within a particular Book and Chapter.</documentation>
+      <wsdl:input message="tns:GetVerseSoapIn" />
+      <wsdl:output message="tns:GetVerseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVerseRange">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Returns a list of verses within a particular Book, Chapter and Verse range.</documentation>
+      <wsdl:input message="tns:GetVerseRangeSoapIn" />
+      <wsdl:output message="tns:GetVerseRangeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRandomVerse">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Returns a random verse.</documentation>
+      <wsdl:input message="tns:GetRandomVerseSoapIn" />
+      <wsdl:output message="tns:GetRandomVerseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDefinitions">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Returns definitions for a word or name from the Bible.</documentation>
+      <wsdl:input message="tns:GetDefinitionsSoapIn" />
+      <wsdl:output message="tns:GetDefinitionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchBible">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Performs a search on the Book Text and Verse Text of the entire Bible and returns the top 50 verses that match the kewords provided.  Set MatchAllWords to True to only match verses that contain all given keywords.  Delimiter can be set to any single character that separates each keyword.</documentation>
+      <wsdl:input message="tns:SearchBibleSoapIn" />
+      <wsdl:output message="tns:SearchBibleSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BibleSoap" type="tns:BibleSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTranslations">
+      <soap:operation soapAction="http://bible.sumerano.com/GetTranslations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBooks">
+      <soap:operation soapAction="http://bible.sumerano.com/GetBooks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChapters">
+      <soap:operation soapAction="http://bible.sumerano.com/GetChapters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVerses">
+      <soap:operation soapAction="http://bible.sumerano.com/GetVerses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVerse">
+      <soap:operation soapAction="http://bible.sumerano.com/GetVerse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVerseRange">
+      <soap:operation soapAction="http://bible.sumerano.com/GetVerseRange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRandomVerse">
+      <soap:operation soapAction="http://bible.sumerano.com/GetRandomVerse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefinitions">
+      <soap:operation soapAction="http://bible.sumerano.com/GetDefinitions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchBible">
+      <soap:operation soapAction="http://bible.sumerano.com/SearchBible" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Bible">
+    <wsdl:port name="BibleSoap" binding="tns:BibleSoap">
+      <soap:address location="http://bible.sumerano.com/bible.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

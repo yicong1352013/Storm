@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hello People,\n\ni would like to understand whether storm has any characters limit which we pass as a value for the parameters?\n\nif yes, what is the max length of characters allowed as a value for the parameters of a function.\n\n\nAppreciate your quick response on this :)",
+    "LastUpdatedDate": "2017-07-07T05:08:34.98-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "storm",
+    "ReportedDate": "2017-07-07T05:08:34.98-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Does Storm truncate data passed as a parameter?",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 12471
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

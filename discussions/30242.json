@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "100717",
+    "ThreadId": "30242",
+    "Html": "Hi Erik<br>\r\n<br>\r\nHow you doing? My name is Pallavi and I was browsing\r\nmaterial regarding the SOAP testing and came across your tool. Its well\r\nmade and is quite intuitive for a new user.<br>\r\n<br>\r\nI was interested in\r\nthe source code of the application and downloaded it from the source\r\ncodes, but some how i feel the code received isn't complete. Where as i\r\nwasn't able to figure out what code are you using to invoke the web\r\nservice request.<br>\r\n<br>\r\nIt will be of immense help if you could share the code for release\r\n3 with me. I know i may be asking too much but if its possible&nbsp; kindly\r\ndo so.<br>\r\n<br>\r\nOr if you could direct me to a working set of code on the code perplex site which i can download and start using.<br>\r\n<br>\r\nPlease let me know regarding the same. Looking forward to a reply.<br>\r\n<br>\r\nThanks\r\n",
+    "PostedDate": "2008-06-25T01:44:44.6-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "101206",
+    "ThreadId": "30242",
+    "Html": "<p>Hi Pallavisa,</p>\r\n<p>    I've added the source to the r0.3 release. :)</p>\r\n<p>~Erik</p>\r\n<div style=\"border:dotted .1em #aaa;border-left:none;border-right:none;font-style:italic;margin:1em 0em 2.5em 3em;padding:.2em\"><br>\r\nPallavisa wrote:<br>\r\nHi Erik<br>\r\n<br>\r\nHow you doing? My name is Pallavi and I was browsing\r\nmaterial regarding the SOAP testing and came across your tool. Its well\r\nmade and is quite intuitive for a new user.<br>\r\n<br>\r\nI was interested in\r\nthe source code of the application and downloaded it from the source\r\ncodes, but some how i feel the code received isn't complete. Where as i\r\nwasn't able to figure out what code are you using to invoke the web\r\nservice request.<br>\r\n<br>\r\nIt will be of immense help if you could share the code for release\r\n3 with me. I know i may be asking too much but if its possible  kindly\r\ndo so.<br>\r\n<br>\r\nOr if you could direct me to a working set of code on the code perplex site which i can download and start using.<br>\r\n<br>\r\nPlease let me know regarding the same. Looking forward to a reply.<br>\r\n<br>\r\nThanks\r\n<br>\r\n<br>\r\n</div>\r\n<br>\r\n",
+    "PostedDate": "2008-06-27T02:12:30.83-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "101264",
+    "ThreadId": "30242",
+    "Html": "Hey Erik!!<br>\r\n<br>\r\nThanks a ton for such a quick response with a positive reply. Its really helpful and i am grateful to you.<br>\r\n<br>\r\n<br>\r\nThanks :)<br>\r\n",
+    "PostedDate": "2008-06-27T07:44:49.283-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

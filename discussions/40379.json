@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "134012",
+    "ThreadId": "40379",
+    "Html": "Hello, first of all let me say that you did a great work in itself with this app.<br>\r\nI'm really interested in F# development and I read about Storm on StackOverflow.com, in an answer to a question of mine.<br>\r\nNow I'd like to look at the code, in Visual Studio, and downloaded rel 1.1 - but when I try to open the solution in VS it keeps telling me that Storm.UI is under source control, and that there are errors in binding... and it refuses to load it.<br>\r\nI'm sure it's something I do wrong on my side, but maybe you can help with some hints?<br>\r\n<br>\r\nThanks a lot<br>\r\nAndrea<br>\r\n",
+    "PostedDate": "2008-11-20T12:39:34.9-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "134171",
+    "ThreadId": "40379",
+    "Html": "<p>I think VS 2008 should give you an option to &quot;permanently remove bindings&quot;.  If it doesn't you can open the solution file in notepad and remove the source control bindings.</p>\r\n<p>~Erik</p>\r\n",
+    "PostedDate": "2008-11-21T01:11:44.257-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "134350",
+    "ThreadId": "40379",
+    "Html": "Yes, I had to modify both th solution file and the Storm.UI project configuration file, and delete all the source control files, but now it's working.<br>\r\nThanks a lot<br>\r\nAndrea<br>\r\n",
+    "PostedDate": "2008-11-21T13:13:01.097-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]
